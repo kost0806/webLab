@@ -124,7 +124,9 @@
 	
 	<h3>One of My Favorite Songs</h3>
 	<p>Lost stars by Adam Levine</p>
-	<audio src="lost_stars.mp3" controls="controls" preload="auto"></audio>
+	<audio controls="controls" preload="metadata">
+		<source src="http://65.vs.woobi.co.kr/lost_stars.mp3" type="audio/mp3">
+	</audio>
 	
 	<h3>My Favorite Quote</h3>
 	<blockquote>
