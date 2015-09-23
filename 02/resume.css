@@ -1,5 +1,5 @@
 body {
-	font-family: Verdana Tahoma sans-serif;
+	font-family: "Verdana", "Tahoma", sans-serif;
 	color: #E4E4E4;	
 	background: #800000 url(cse326bg.png) no-repeat top right fixed;
 }
@@ -68,10 +68,4 @@ img {
 
 a > img {
 	border: 0px solid black;
-}
-
-div {
-	position: fixed;
-	left: 50%;
-	margin-left: 100px;
 }
