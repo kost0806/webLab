@@ -3,9 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<link href="http://cdclconsult.com/wp-content/uploads/2014/07/no-img.jpg" type="image/jpg" rel="shortcut icon">
+	<link href="resume.css" rel="stylesheet">
 	<title>Resume</title>
 </head>
 <body>
+
 	<h1>Kim Minyoung</h1>
 	<img src="http://cdclconsult.com/wp-content/uploads/2014/07/no-img.jpg" alt="me" width="200" height="200">
 	<ul>
@@ -14,16 +16,16 @@
 		<li>010-4658-7626</li>
 	</ul>
 	<hr>
-	<h3>Objective</h3>
+	<h2>Objective</h2>
 	<p>My overall objective is to improve my <em>programming</em> skills and <em>security</em> skills</p>
 	
-	<h3>Experience</h3>
+	<h2>Experience</h2>
 	<ul>
-		<li>Intern at Softopia in Hanyang Univ. ERICA<br>2015.01 ~ 2015.03</li>
-		<li>Intern at Chungwoo Funstation<br>2015.06 ~ 2015.08</li>
+		<li>Intern at <strong>Softopia in Hanyang Univ. ERICA</strong><br>2015.01 ~ 2015.03</li>
+		<li>Intern at <strong>Chungwoo Funstation</strong><br>2015.06 ~ 2015.08</li>
 	</ul>
 	
-	<h3>Skills</h3>
+	<h2>Skills</h2>
 	<ol reversed>
 		<li>
 			Programming Languages
@@ -72,14 +74,14 @@
 		</li>
 	</ol>
 	
-	<h3>Education</h3>
+	<h2>Education</h2>
 	<ul>
 		<li>2010, <a href="www.kirin.ms.kr">Ki-rin Middleschool</a>, Korea</li>
 		<li>2013, <a href="www.jeonil.hs.kr">Jeon-il Highschool</a>, Korea</li>
 		<li>2013 ~, <a href="http://www.hanyang.ac.kr/">Hanyang Univ. ERICA Camp.</a>, Korea</li>
 	</ul>
 	<hr>
-	<h3>My Favorite Movies</h3>
+	<h2>My Favorite Movies</h2>
 	<table >
 		<caption>My favorite movie list</caption>
 		<tr>
@@ -116,35 +118,35 @@
 		</tr>
 	</table>
 	
-	<h3>Movie Trailer from Youtube</h3>
+	<h2>Movie Trailer from Youtube</h2>
 	<p>STAR WARS Episode 7 TRAILER # 2</p>
 	<object width="560" height="315" type="application/x-shockwave-flash" data="https://www.youtube.com/v/clLYRvtsoZ0">
 		<param name="wmode" value="transparent">
 	</object>
 	
-	<h3>One of My Favorite Songs</h3>
+	<h2>One of My Favorite Songs</h2>
 	<p>Lost stars by Adam Levine</p>
 	<audio controls="controls" preload="metadata">
 		<source src="http://65.vs.woobi.co.kr/lost_stars.mp3" type="audio/mp3">
 	</audio>
 	
-	<h3>My Favorite Quote</h3>
+	<h2>My Favorite Quote</h2>
 	<blockquote>
 		"Stay hungry. Stay foolish."<br>
 		&ndash;<em>Steve Jobs</em>
 	</blockquote>
-	<h3>Short Quiz</h3>
+	<h2>Short Quiz</h2>
 	<dl>
 		<dt><abbr title="Domain Name System">DNS</abbr></dt><dd>The DNS is a hierarchical distributed naming system for computers, services, or any resource connected to the Internet or a private network.</dd>
 		<dt><abbr title="Maximum Transmission Unit">MTU</abbr></dt><dd>The size of the largest packet that a network protocol can transmit</dd>
 		<dt><abbr title="Internet Service Provider">ISP</abbr></dt><dd>An ISP is an organization that provides services for accessing, using, or participating in the Internet.</dd>
 	</dl>
-	
 	<a href="http://validator.w3.org/check/referer">
 		<img src="http://selab.hanyang.ac.kr/courses/cse326/2015/problems/images/w3c-html.png" alt="Validate!">
 	</a>
 	<a href="http://jigsaw.w3.org/css-validator/check/referer">
 		<img src="http://selab.hanyang.ac.kr/courses/cse326/2015/problems/images/w3c-css.png" alt="Validate!">
 	</a>
+
 </body>
 </html>
