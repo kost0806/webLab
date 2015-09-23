@@ -1,4 +1,7 @@
 <!DOCTYPE HTML>
+
+<!-- You can see this page in http://65.vs.woobi.co.kr/webLab/01 -->
+
 <html>
 <head>
 	<meta charset="utf-8">
