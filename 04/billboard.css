@@ -1,0 +1,348 @@
+body {
+	font-family: "Brown", verdana, sans-serif;
+	margin: 0;
+}
+
+body > div {
+	max-width: 1024px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+header {
+	background-color: black;
+	color: white;
+	font-size: 15px;
+	overflow: hidden;
+}
+
+header > div {
+	max-width: 1024px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+header > div > div {
+
+	float: left;
+	padding-top: 11px;
+	padding-bottom: 11px;
+	padding-right: 30px;
+}
+
+header > div > div:last-child {
+	color: #FF6567;
+	float: right;
+	padding-right: 10px;
+}
+
+header > div > div:hover {
+	color: #1CACE2;
+	cursor: pointer;
+}
+
+header > div > div:last-child:hover {
+	color: #1CACE2;
+	cursor: pointer;
+}
+
+body > div > div:nth-child(1) {
+	padding-top: 32px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+}
+
+body > div > div:nth-child(1) img {
+	width: 300px;
+	height: 62px;
+}
+
+body > div > div:nth-child(1) > div{
+	float: right;
+	margin-top: 45px;
+}
+
+body > div > div:nth-child(1) > div a {
+	text-decoration: none;
+}
+
+nav > div {
+	border: 1px #D9D9D8 solid;
+	float: left;
+	padding-top: 0.65em;
+	padding-bottom: 0.65em;
+	padding-left: 0.72em;
+	padding-right: 0.72em;
+}
+
+body > div > nav > div:hover {
+	border: 2px black solid;
+}
+
+body > div > div > h1 {
+	text-align: center;
+}
+
+#week_bar {
+	background-color: black;
+	text-align: center;
+	color: white;
+	overflow: hidden;
+}
+
+#week_bar > div:nth-child(1) {
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+#week_bar > div:nth-child(1) > div {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	float: left;
+	font-size: 1.25em;
+}
+
+#week_bar > div:first-child > div:nth-child(1) {
+	background-color: #3B5998;
+}
+
+#week_bar > div:first-child > div:nth-child(2) {
+	background-color: #55ACEE;
+	margin-left: 0.25em;
+}
+
+#week_bar > div:first-child i {
+	margin-top: 5px;
+}
+
+aside {
+	background-color: black;
+	color: white;
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 300px;
+	float: right;
+}
+
+aside > div:first-child {
+	background-color: #484647;
+	padding: 0.75em;
+}
+
+aside > div:first-child i {
+	color: black;
+}
+
+aside > div > div {
+	height: 100px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	border-bottom: 1px #989898 solid;
+}
+
+/*title row*/
+aside > div > div > div:first-child {
+	color: #989898;
+	padding: 1em;
+}
+
+/*rank row*/
+aside > div > div > div:nth-child(2) {
+	width: 45px;
+	font-size: 2em;
+	margin-top: 6px;
+	text-align: center;
+	float: left;
+}
+
+aside > div > div > div:nth-child(3) {
+	float: left;
+}
+
+/*album image row*/
+aside > div > div > div:nth-child(3) > img {
+	width: 2.5em;
+	height: 2.5em;
+	margin: 6px;
+	float: left;
+}
+
+/*song title row*/
+aside > div > div > div:nth-child(3) > p {
+	width: 140px;
+	margin: 0;
+	float: left;
+}
+
+/*title and artist span*/
+aside > div > div > div:nth-child(3) > p > * {
+	display: block;
+}
+
+/*title span in title paragraph*/
+aside > div > div > div:nth-child(3) > p > span:first-child {
+	font-size: 1em;
+}
+
+/*artist span in title paragraph*/
+aside > div > div > div:nth-child(3) > p > span:nth-child(2) {
+	font-size: 12px;
+	color: #1CACE2;
+}
+
+/*chart highlight: song play btn div*/
+aside > div > div > div:nth-child(4) {
+	width: 32px;
+	height: 32px;
+	border: 2px white solid;
+	border-radius: 50%;
+	font-size: 15px;
+	margin-top: 5px;
+	text-align: center;
+	float: right;
+}
+
+/*chart highlight: song play btn icon*/
+aside > div > div > div:nth-child(4) > i {
+	margin-top: 7px;
+}
+
+.fa_play:nth-child(0) {
+	width: 32px;
+	height: 32px;
+	border: 2px white solid;
+	border-radius: 50%;
+	font-size: 15px;
+	margin-top: 5px;
+}
+
+article {
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+article > div {
+	height: 104px;
+	border-top: 1px #CDCDCD solid;
+	border-bottom: 1px white solid;
+}
+
+article > div:hover {
+	border-top: 1px black solid;
+	border-bottom: 1px black solid;
+}
+
+article > div > div:nth-child(1) {
+	width: 34px;
+	height: 104px;
+	text-align: center;
+	color: #8C8E90;
+	background-color: rgb(231,231,231);
+}
+
+
+.fa-arrow-up {
+	color: #05C648;
+}
+
+.fa-arrow-down {
+	color: #F93C33;	
+}
+
+article > div > div {
+	float: left;
+}
+
+article > div > div:nth-child(2) > *{
+	display: block;
+}
+
+article > div > div:nth-child(2) {
+	width: 100px;
+	margin: 10px;
+}
+
+article > div > div:nth-child(2) > span:nth-child(1) {
+	font-size: 62px;
+	text-align: center;
+}
+
+article > div > div:nth-child(2) > span:nth-child(2) {
+	font-size: 12.4px;
+	color: #989898;
+	height: 1px;
+}
+
+article > div > div:nth-child(3) > * {
+	float: left;
+}
+
+article > div > div:nth-child(3) > p > * {
+	display: block;
+}
+
+article > div > div > p > span:nth-child(1) {
+	font-size: 24px;
+}
+
+article > div > div > p > span:nth-child(2) {
+	font-size: 16px;
+	color: #1CACE2;
+}
+
+article > div > div > p > span:nth-child(2):hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+article > div > div:nth-child(4) {
+	width: 32px;
+	height: 32px;
+	border: 2px black solid;
+	border-radius: 50%;
+	font-size: 15px;
+	margin-top: 15px;
+	margin-right: 10px;
+	text-align: center;
+	vertical-align: middle;
+	float: right;
+}
+
+article > div > div:nth-child(4):hover {
+	color: #1cace2;
+	border-color: #1cace2;
+	cursor: pointer;
+}
+
+article > div > div:nth-child(4) > i {
+	margin-top: 7px;
+}
+
+article > div > div > img {
+	margin-top: 6px;
+	margin-bottom: 6px;
+	margin-right: 12px;
+	width: 91px;
+	height: 91px;
+}
+
+footer {
+	background-color: black;
+	overflow: hidden;
+	margin-top: 30px;
+}
+
+footer > div {
+	float: right;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+}
+
+footer > div > a {
+	float: left;
+}
