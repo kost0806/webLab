@@ -134,9 +134,13 @@ else
         <?php
         //$orderby = 0;
         $ordered_list = getWordsByOrder($lines, $orderby);
+        if ($orderby == 1)
+            $rev = "reverse ";
+        else
+            $rev = ""
         ?>
         <p>
-            All of words ordered by <strong>alphabetical <?php if ($orderby == 1) echo("reverse"); ?> order</strong> are followings :
+            All of words ordered by <strong>alphabetical <?= $rev?>order</strong> are followings :
         </p>
         <ol>
             <?php
