@@ -115,7 +115,7 @@ body > div > div > h1 {
 }
 
 #week_bar > div:first-child i {
-	margin-top: 5px;
+	line-height: 32px;
 }
 
 aside {
@@ -208,7 +208,7 @@ aside > div > div > div:nth-child(4) {
 
 /*chart highlight: song play btn icon*/
 aside > div > div > div:nth-child(4) > i {
-	margin-top: 7px;
+	line-height: 32px;
 }
 
 .fa_play:nth-child(0) {
@@ -242,8 +242,12 @@ article > div > div:nth-child(1) {
 	text-align: center;
 	color: #8C8E90;
 	background-color: rgb(231,231,231);
+	vertical-align: middle;
 }
 
+.fa-arrow-up, .fa-arrow-down, .fa-arrow-right {
+	line-height: 104px;
+}
 
 .fa-arrow-up {
 	color: #05C648;
@@ -319,7 +323,7 @@ article > div > div:nth-child(4):hover {
 }
 
 article > div > div:nth-child(4) > i {
-	margin-top: 7px;
+	line-height: 32px;
 }
 
 article > div > div > img {
