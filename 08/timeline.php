@@ -17,6 +17,7 @@
         }
         public function delete($no) // This function deletes a tweet
         {
+            $no = $this->db->quote($no);
             $q = "DELETE FROM tweets WHERE no=$no";
             $result = $this->db->query($q);
         }
@@ -46,10 +47,9 @@
                 $q = "SELECT * FROM tweets WHERE author=$author ORDER BY time DESC";
             }
             else {
-                $contents = "\"%$query%\"";
+                $contents = $this->db->quote("%$query%");
                 $q = "SELECT * FROM tweets WHERE contents like $contents ORDER BY time DESC";
             }
-
             $result = $this->db->query($q);
             $num_row = $result->rowCount();
             $result = $result->fetchAll();

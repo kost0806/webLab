@@ -54,7 +54,7 @@
                     $time = $tmp[1]." ".$tmp[0];
                 ?>
                 <div class="tweet">
-                    <form class="delete-form" action="delete.php">
+                    <form class="delete-form" action="delete.php" method="POST">
                         <input type="submit" value="delete">
                         <input type="hidden" value="<?= $row['no']?>" name="no">
                     </form>

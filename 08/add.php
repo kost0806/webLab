@@ -16,6 +16,6 @@
         }
         
     } catch(Exception $e) {
-         header("Location:error.php"); 
+        header("Location:error.php"); 
     }
 ?>

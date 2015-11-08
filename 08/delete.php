@@ -2,7 +2,7 @@
 require_once("timeline.php");
 try {
     $timeline = new TimeLine();
-    $timeline->delete($_GET["no"]);
+    $timeline->delete($_POST["no"]);
     #call delete function
     header("Location:index.php");
     
