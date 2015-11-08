@@ -30,8 +30,6 @@
             $result = $result->fetchAll();
             for ($i = 0; $i < $num_row; ++$i) {
                 $content = $result[$i]["contents"];
-                # $url = "http://".$_SERVER["HTTP_HOST"]."/YOUR INDEX PLACE/index.php";
-                #$url = "http://".$_SERVER["HTTP_HOST"]."/web_lab/08/index.php";
                 $url = "index.php";
                 $replace = "<a href=\"{$url}?type=content&query=$1\">#$1</a>";
                 $content = preg_replace("/#([_]*[a-zA-Z0-9가-힣]+[\w가-힣]*)/", $replace, $content);
@@ -57,8 +55,6 @@
             $result = $result->fetchAll();
             for ($i = 0; $i < $num_row; ++$i) {
                 $content = $result[$i]["contents"];
-                # $url = "http://".$_SERVER["HTTP_HOST"]."/YOUR INDEX PLACE/index.php";
-                #$url = "http://".$_SERVER["HTTP_HOST"]."/web_lab/08/index.php";
                 $url = "index.php";
                 $replace = "<a href=\"{$url}?type=content&query=$1\">#$1</a>";
                 $content = preg_replace("/#([_]*[a-zA-Z0-9가-힣]+[\w가-힣]*)/", $replace, $content);
