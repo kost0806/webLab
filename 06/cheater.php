@@ -73,6 +73,7 @@
 			<p>You didn't provide a valid name. Try again?</p>
 		--> 
 		<h1>Sorry</h1>
+		
 		<p>You didn't provide a valid name. <a href="gradestore.html">Try again?</a></p>
 		<?php
 		# Ex 5 : 
