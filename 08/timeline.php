@@ -5,7 +5,7 @@
         function __construct()
         {
             # You can change mysql username or password
-            $this->db = new PDO("mysql:host=localhost;dbname=kost", "kost", "alsdud1!");
+            $this->db = new PDO("mysql:host=localhost;dbname=kost", "kost", "kost");
             $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         }
         public function add($tweet) // This function inserts a tweet
@@ -32,7 +32,7 @@
             for ($i = 0; $i < $num_row; ++$i) {
                 $content = $result[$i]["contents"];
                 $url = "index.php";
-                $replace = "<a href=\"{$url}?type=content&query=$1\">#$1</a>";
+                $replace = "<a href=\"{$url}?type=content&query=%23$1\">#$1</a>";
                 $content = preg_replace("/#([_]*[a-zA-Z0-9가-힣]+[\w가-힣]*)/", $replace, $content);
                 $result[$i]["contents"] = $content;
             }
@@ -43,10 +43,11 @@
             $t = strtolower($type);
             $q = "";
             if (!strcmp($t, "author")) {
-                $author = $this->db->quote($query);
-                $q = "SELECT * FROM tweets WHERE author=$author ORDER BY time DESC";
+                $author = $this->db->quote("%$query%");
+                $q = "SELECT * FROM tweets WHERE author like $author ORDER BY time DESC";
             }
             else {
+                $query = htmlspecialchars($query);
                 $contents = $this->db->quote("%$query%");
                 $q = "SELECT * FROM tweets WHERE contents like $contents ORDER BY time DESC";
             }
@@ -56,7 +57,7 @@
             for ($i = 0; $i < $num_row; ++$i) {
                 $content = $result[$i]["contents"];
                 $url = "index.php";
-                $replace = "<a href=\"{$url}?type=content&query=$1\">#$1</a>";
+                $replace = "<a href=\"{$url}?type=content&query=%23$1\">#$1</a>";
                 $content = preg_replace("/#([_]*[a-zA-Z0-9가-힣]+[\w가-힣]*)/", $replace, $content);
                 $result[$i]["contents"] = $content;
             }
