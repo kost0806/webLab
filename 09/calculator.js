@@ -2,6 +2,7 @@
 window.onload = function () {
     var stack = [];
     var displayVal = "0";
+    $("expression").innerHTML = "";
     for (var i in $$('button')) {
         $$('button')[i].onclick = function () {
             var value = this.innerHTML;
