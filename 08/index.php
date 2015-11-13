@@ -26,7 +26,7 @@
             <div class="panel">
                 <div class="panel-heading">
                     <!-- Ex 3: Modify forms -->
-                    <form class="write-form" action="add.php">
+                    <form class="write-form" action="add.php" method="POST">
                         <input type="text" placeholder="Author" name="author">
                         <div>
                             <input type="text" placeholder="Content" name="content">

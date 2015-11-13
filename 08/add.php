@@ -3,11 +3,11 @@
 
     try {
         require_once("timeline.php");
-        if (preg_match("/^[a-zA-Z]?([a-zA-Z][-\s]?[a-zA-Z]?){0,9}([a-zA-Z]|[^-]){1}$/", $_GET["author"])) { #validate author & content
+        if (preg_match("/^[a-zA-Z]?([a-zA-Z][-\s]?[a-zA-Z]?){0,9}([a-zA-Z]|[^-]){1}$/", $_POST["author"])) { #validate author & content
             $timeline = new TimeLine();
             $tweets = array(
-                "author" => $_GET["author"],
-                "content" => htmlspecialchars($_GET["content"])
+                "author" => $_POST["author"],
+                "content" => htmlspecialchars($_POST["content"])
                 );
             $timeline->add($tweets);
             header("Location:index.php");
