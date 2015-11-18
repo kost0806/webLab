@@ -18,15 +18,15 @@ function stopToStart(){
 }
 
 function stopGame(){
-	$('state').innerHTML = "Stop";
-	$('answer').innerHTML = "0/0";
+	$('state').update("Stop");
+	$('answer').update("0/0");
 	targetBlocks = [];
 	selectedBlocks = [];
 	clearTimeout(timer);
 }
 
 function startToSetTarget(){
-	$('state').innerHTML = "Ready!";
+	$('state').update("Ready!");
 	targetBlocks = [];
 	selectedBlocks = [];
 	clearTimeout(timer);
@@ -48,7 +48,7 @@ function startToSetTarget(){
 }
 
 function setTargetToShow(){
-	$('state').innerHTML = "Memorize!";
+	$('state').update("Memorize!");
 	var blocks = $$('.block');
 	for (var i = 0; i < numberOfTarget; ++i) {
 		blocks[targetBlocks[i]].addClassName('target');
@@ -58,7 +58,7 @@ function setTargetToShow(){
 }
 
 function showToSelect(){
-	$('state').innerHTML = "Select!";
+	$('state').update("Select!");
 	var blocks = $$('.block');
 	for (var i = 0; i < numberOfTarget; ++i) {
 		blocks[targetBlocks[i]].removeClassName('target');
@@ -78,7 +78,7 @@ function showToSelect(){
 }
 
 function selectToResult(){
-	$('state').innerHTML = 'Checking';
+	$('state').update('Checking');
 	var blocks = $$('.block');
 	for (var i = 0; i < numberOfBlocks; ++i) {
 		blocks[i].removeClassName('selected');
@@ -102,6 +102,6 @@ function selectToResult(){
 	}
 
 	var beforeAnswer = $('answer').innerHTML.split('/');
-	$('answer').innerHTML = '' + (numberOfCorrect + parseInt(beforeAnswer[0])) + '/' + (numberOfTarget + parseInt(beforeAnswer[1]));
+	$('answer').update('' + (numberOfCorrect + parseInt(beforeAnswer[0])) + '/' + (numberOfTarget + parseInt(beforeAnswer[1])));
 	timer = setTimeout(startToSetTarget, interval);
 }
