@@ -22,14 +22,14 @@ function stopGame(){
 	$('answer').innerHTML = "0/0";
 	targetBlocks = [];
 	selectedBlocks = [];
-	clearInterval(timer);
+	clearTimeout(timer);
 }
 
 function startToSetTarget(){
 	$('state').innerHTML = "Ready!";
 	targetBlocks = [];
 	selectedBlocks = [];
-	clearInterval(timer);
+	clearTimeout(timer);
 
 	var arr = [];
 
