@@ -26,12 +26,10 @@ header("Content-type: application/json");
 // // 2. search all the songs that are under the given top rank 
 // // 3. generate the result in JSON data format 
 // $file = file($SONGS_FILE);
-// $line_num = count($file);
 // $json = '';
 // $tmp = array();
-// for ($i = 0; $i < $line_num; ++$i) {
+// for ($i = 0; $i < count($file); ++$i) {
 // 	list($title, $artist, $rank, $genre, $time) = explode("|", trim($file[$i]));
-// 	// Hello|Adele|1|Pop|4:55
 // 	if ($rank <= $top) {
 // 		$tmp[((int)$rank) - 1] = '{"title": "' . $title . '", "artist": "' . $artist . '", "rank": "' . $rank . '", "genre": "' . $genre . '", "time": "' . $time . '"},';
 // 	}
