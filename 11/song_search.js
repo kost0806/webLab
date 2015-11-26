@@ -23,7 +23,11 @@ document.observe("dom:loaded", function() {
 function showSongs_XML(ajax) {
 	// alert(ajax.responseText);
 	// console.log(ajax.responseText);
-	$('songs').update('');
+	var songs = $$('#songs > ');
+	var liCount = songs.length;
+	for (var i = 0; i < liCount; ++i) {
+		songs[i].remove();
+	}
 
 	var xml_count = ajax.responseXML.getElementsByTagName('song').length;
 	for (var i = 0; i < xml_count; ++i) {
@@ -40,7 +44,12 @@ function showSongs_XML(ajax) {
 function showSongs_JSON(ajax) {
 	// alert(ajax.responseText);
 	// console.log(ajax.responseText);
-	$('songs').update('');
+	var songs = $$('#songs > ');
+	var liCount = songs.length;
+	for (var i = 0; i < liCount; ++i) {
+		songs[i].remove();
+	}
+	
 	var jsonObj = JSON.parse(ajax.responseText);
 	var songs = jsonObj['songs'];
 	for (var i = 0; i < songs.length; ++i) {
